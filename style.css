@@ -127,6 +127,8 @@ body {
   padding: 1rem;
   width: 220px;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .card img {
@@ -232,3 +234,4 @@ body {
 h3{
   padding: 1%;
 }
+
