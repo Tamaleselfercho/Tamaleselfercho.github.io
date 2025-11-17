@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  background-image: url('img tamales/Todos.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Encabezado */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #4CAF50;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  gap: 15px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.btn {
+  background: #FFC107;
+  color: #333;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #ffb300;
+}
+
+/* Hero */
+.hero {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Mapa */
+.Mapa h2 {
+  color: #4CAF50;
+  text-align: center;
+}
+
+.Mapa-contenido {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 1rem;
+}
+
+.Mapa-contenido img, .maps {
+  border-radius: 10px;
+}
+
+/* Historia */
+.historia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.historia h2 {
+  color: #4CAF50;
+}
+.historia-img{
+  padding-left: 1%;
+}
+.historia-img img {
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.503);
+}
+
+/* Menú */
+.menu {
+  text-align: center;
+  padding: 2rem;
+}
+
+.menu h2 {
+  color: #4CAF50;
+}
+
+.menu-grid {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 1rem;
+  width: 220px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.promo {
+  margin-top: 1rem;
+  background: #FFC107;
+  padding: 1rem;
+  border-radius: 8px;
+  color: #333;
+}
+/* DESCRIPCIÓN EN HOVER */
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card .descripcion {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.75);
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transition: 0.3s;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.card:hover .descripcion {
+  opacity: 1;
+}
+
+/* Opiniones */
+.opiniones {
+  background: #fff;
+  color: #333;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Contacto */
+.contacto {
+  text-align: center;
+  padding: 2rem;
+}
+
+.contacto form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: auto;
+}
+
+.contacto input, .contacto select, .contacto button {
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.contacto button {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+
+.contacto button:hover {
+  background: #45a049;
+}
+
+/* Footer */
+.footer {
+  background: #333;
+  text-align: center;
+  color: white;
+  padding: 1rem;
+}
+
+.footer a {
+  color: #FFC107;
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header, .historia {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+h3{
+  padding: 1%;
+}

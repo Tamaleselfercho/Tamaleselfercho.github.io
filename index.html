@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tamales El Fercho (Don Tamal)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Encabezado -->
+  <header class="header">
+    <div class="logo">Tamales El Fercho (Don Tamal)</div>
+    <nav class="nav">
+      <a href="#">Inicio</a>
+      <a href="#historia">Nuestra historia</a>
+      <a href="#menu">Menú</a>
+      <a href="#contacto">Pedidos</a>
+    </nav>
+    <a href="#contacto" class="btn">Ordena ya</a>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>El auténtico sabor del Tolima en tu mesa</h1>
+      <a href="#contacto" class="btn">Ordena ya</a>
+    </div>
+  </section>
+
+  <!-- Mapa -->
+  <section class="Mapa">
+    <div id="pan" style="background-image:url('img tamales/Tamales-Tolimenses.webp')"></div>
+    <h2>Ubicación</h2>
+    <h3>Nuestro establecimiento está ubicado en el barrio El Tesoro</h3>
+    <div class="Mapa-contenido">
+      <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248.5815484624421!2d-74.14634318475355!3d4.5390485014283115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3fa164532966e9%3A0x1755368f73d571fa!2sTameles%20El%20Fercho!5e0!3m2!1ses!2sco!4v1685219317150!5m2!1ses!2sco"
+        width="100%" height="490" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <img src="img tamales/T1.jpg" alt="Tamales artesanales" width="24.3%">
+      <img src="img tamales/banner.jpeg" alt="Tamales artesanales" width="15%">
+      <img src="img tamales/diferenciales.jpeg" alt="Tamales artesanales" width="15%">
+    </div>
+  </section>
+
+  <!-- Nuestra historia -->
+  <section id="historia" class="historia">
+    <div class="historia-text">
+      <h2>Nuestra historia</h2>
+      <p>Tradición, ingredientes frescos y recetas familiares se unen en cada uno de nuestros tamales.</p>
+    </div>
+    <div class="historia-img">
+      <img src="img tamales/Tamalabierto.jpg" alt="Tamal abierto" width="300">
+    </div>
+  </section>
+
+  <!-- Menú -->
+  <section id="menu" class="menu">
+  <h2>Menú de Tamales</h2>
+  <div class="menu-grid">
+
+    <div class="card">
+      <img src="img tamales/Tamal rojo.jpg" alt="Tamal Sencillo">
+      <h3>Tamal Sencillo</h3>
+      <p>$4.500</p>
+      <div class="descripcion">450 gramos de tamal tradicional con pollo, arroz, arbeja, tocino y zanahoria.</div>
+    </div>
+
+    <div class="card">
+      <img src="img tamales/Tamales azules.jpg" alt="Tamal Especial">
+      <h3>Tamal Especial</h3>
+      <p>$5.500</p>
+      <div class="descripcion">500 gramos que incluye pollo, medio huevo, una porcion de carne, arroz, arbeja, tocino y zanahoria.</div>
+    </div>
+
+    <div class="card">
+      <img src="img tamales/Ayacas.jpg" alt="Tamal Ayaca">
+      <h3>Tamal Ayaca</h3>
+      <p>$6.500</p>
+      <div class="descripcion">600 gramos: Colombina, doble porción de carne, medio huevo, arroz, arbeja, tocino y zanahoria mas grande.</div>
+    </div>
+
+    <div class="card">
+      <img src="img tamales/Megas.jpg" alt="Tamal Mega">
+      <h3>Mega Especial</h3>
+      <p>$8.500</p>
+      <div class="descripcion">El más grande: Colombina, doble porción de carne, costilla, huevo completo, arroz, arbeja, tocino y zanahoria mas grande.</div>
+    </div>
+
+  </div>
+
+  <div class="promo">
+    🎉 Combo familiar: 5 tamales + bebida gratis
+  </div>
+</section>
+
+
+  <!-- Opiniones -->
+  <section class="opiniones">
+    <h2>Opiniones de clientes</h2>
+    <div class="opinion">
+      <p>⭐⭐⭐⭐⭐</p>
+      <p>"Los mejores tamales que he probado. ¡Recomendados!"</p>
+      <span>- Juan</span>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="contacto">
+    <h2>Haz tu pedido</h2>
+    <form id="pedidoForm">
+      <input type="text" id="nombre" placeholder="Nombre" required>
+      <input type="tel" id="celular" placeholder="Celular" required>
+      <input type="text" id="direccion" placeholder="Dirección" required>
+
+      <select id="tipo" required>
+        <option value="" disabled selected>Selecciona el tipo de tamal</option>
+        <option value="sencillo">Tamal Sencillo ($4.500)</option>
+        <option value="especial">Tamal Especial ($5.500)</option>
+        <option value="ayaca">Tamal Ayaca ($6.500)</option>
+        <option value="mega">Mega Especial ($8.500)</option>
+      </select>
+
+      <input type="number" id="cantidad" placeholder="Cantidad" min="1" required>
+      <p id="total" style="color:#4CAF50;font-weight:bold;"></p>
+
+      <button type="submit" class="btn">Enviar pedido</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Tamales El Fercho (Don Tamal)</p>
+    <p>Escríbenos al |
+      <a href="https://wa.me/573144268504?text=Buen día, quiero hacer un pedido de tamales." target="_blank">
+        WhatsApp
+      </a>
+    </p>
+  </footer>
+
+  <!-- Script de WhatsApp -->
+  <script>
+    const precios = {
+      sencillo: 4500,
+      especial: 5500,
+      ayaca: 6500,
+      mega: 8500
+    };
+
+    const tipo = document.getElementById("tipo");
+    const cantidad = document.getElementById("cantidad");
+    const totalEl = document.getElementById("total");
+
+    function actualizarTotal() {
+      const tipoTamal = tipo.value;
+      const cant = parseInt(cantidad.value);
+      if (tipoTamal && cant > 0) {
+        const total = precios[tipoTamal] * cant;
+        totalEl.textContent = "Total: " + total.toLocaleString("es-CO", { style: "currency", currency: "COP" });
+      } else {
+        totalEl.textContent = "";
+      }
+    }
+
+    tipo.addEventListener("change", actualizarTotal);
+    cantidad.addEventListener("input", actualizarTotal);
+
+    document.getElementById("pedidoForm").addEventListener("submit", function(e){
+      e.preventDefault();
+
+      const numeroWhatsApp = "573144268504";
+      const nombre = document.getElementById("nombre").value;
+      const cel = document.getElementById("celular").value;
+      const dir = document.getElementById("direccion").value;
+      const tipoTamal = tipo.value;
+      const cant = parseInt(cantidad.value);
+      const total = precios[tipoTamal] * cant;
+      const totalFormateado = total.toLocaleString("es-CO", { style: "currency", currency: "COP" });
+
+      const nombresTamales = {
+        sencillo: "Tamal Sencillo",
+        especial: "Tamal Especial",
+        ayaca: "Tamal Ayaca",
+        mega: "Mega Especial"
+      };
+
+      const mensaje = `¡Hola! Soy ${nombre}.
+      📞 Celular: ${cel}
+      🏠 Dirección: ${dir}
+      🍽 Pedido:
+      - ${nombresTamales[tipoTamal]}
+      - Cantidad: ${cant}
+      🧾 Total a pagar: ${totalFormateado}
+      Quisiera confirmar mi pedido, por favor.`;
+
+      const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
+      window.open(url, "_blank");
+
+    });
+  </script>
+</body>
+</html>
