@@ -171,7 +171,37 @@ body {
 .card:hover .descripcion {
   opacity: 1;
 }
+/* 💚 NUEVA SECCIÓN MAYORISTA */
+.mayorista {
+    padding: 2rem;
+    text-align: center;
+}
 
+.mayorista h2 {
+    color: #4CAF50;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.mayorista-card {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 12px;
+    padding: 1.5rem;
+    max-width: 850px;
+    margin: auto;
+
+    border: 4px solid #8BC34A;
+    box-shadow: 0 0 12px rgba(0,0,0,0.25);
+    background-image: linear-gradient(to right, rgba(255,165,0,0.25), rgba(139,195,74,0.25));
+}
+
+.mayorista-card p {
+    color: #333;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
 /* Opiniones */
 .opiniones {
   background: #fff;
@@ -234,4 +264,5 @@ body {
 h3{
   padding: 1%;
 }
+
 
