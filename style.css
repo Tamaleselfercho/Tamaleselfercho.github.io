@@ -127,8 +127,6 @@ body {
   padding: 1rem;
   width: 220px;
   text-align: center;
-  position: relative;
-  overflow: hidden;
 }
 
 .card img {
@@ -171,6 +169,7 @@ body {
 .card:hover .descripcion {
   opacity: 1;
 }
+
 /* 💚 NUEVA SECCIÓN MAYORISTA */
 .mayorista {
     padding: 2rem;
@@ -202,6 +201,7 @@ body {
     line-height: 1.6;
     font-size: 1.1rem;
 }
+
 /* Opiniones */
 .opiniones {
   background: #fff;
@@ -264,6 +264,3 @@ body {
 h3{
   padding: 1%;
 }
-
-
-
